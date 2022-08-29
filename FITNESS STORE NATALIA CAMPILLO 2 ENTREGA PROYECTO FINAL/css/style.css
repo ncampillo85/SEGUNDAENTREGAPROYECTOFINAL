@@ -1,0 +1,136 @@
+/*MOBILE LAST*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+/*HEADER*/
+.header {
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: columns;
+
+}
+
+.header img {
+    width: 90px;
+    padding: 15px;
+    display: flex;
+
+
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+
+}
+
+.header li,
+.footer li {
+    margin: 10px;
+}
+
+.header a,
+.footer a {
+    color: black;
+    text-decoration: none;
+}
+
+.header a:hover,
+.footer a:hover {
+    color: aliceblue;
+    font-weight: bolder;
+}
+/* MAIN*/
+.main-index, .main-contacto, .main-nosotros, .main-sucursales, .main-tienda{ 
+    background-color: aqua
+    
+}
+.bloque{
+    background-color: burlywood;
+    border: 3px solid black;
+    margin-left: 10px;
+    width: 70%;
+    height: 80%;
+    display: block;
+}
+
+
+
+    /*FOOTER*/
+.footer {
+    background-color: darkgrey;
+
+
+}
+
+.footer ul {
+    display: flex;
+    list-style: none;
+    width: 182px;
+    margin: 0 auto;
+    justify-content: center;
+  
+}
+/*main*/
+main{
+    min-height: 80vh;
+    
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    
+    
+
+
+}
+/*TIENDA*/
+.grid-container {
+    max-width: 850px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    grid-row-gap: 15px;
+
+}
+.grid-container img{
+    height: 250px;
+
+}
+
+
+
+/*MEDIA QUERYS*/
+@media(max-width: 850px) {
+    .grid-container{
+        grid-template-columns:repeat(3,1fr) ;
+        
+
+    }
+}
+@media (max-width: 680px){
+    .header {
+        flex-direction: column;
+    }
+.header img{
+    width: 150px;
+}
+.footer ul{
+    width: 182px;
+}
+.grid-container{
+    grid-template-columns: repeat(3 ,1fr)
+}
+ }
